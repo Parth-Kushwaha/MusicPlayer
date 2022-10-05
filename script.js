@@ -117,7 +117,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
                
             // condition true if the songItem which is clicked on is the SAME 
             // songItem which is being played
-            if(parseInt(e.target.id)==`assets/${index}`){
+            if(parseInt(e.target.id)==`${index}`){
                 audioElement.pause();
                 gif.style.opacity = 0;
                 gif2.style.opacity = 0;
