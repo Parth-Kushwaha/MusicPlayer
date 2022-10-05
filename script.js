@@ -2,7 +2,7 @@ console.log("hello");
 
 // initialise variables
 let index = 1;
-let audioElement = new Audio('1.mp3');
+let audioElement = new Audio('assets/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("gif");
@@ -12,15 +12,15 @@ let masterSongName = document.getElementById("masterSongName");
 
 // songs array
 let songs = [
-    { songName: "song 1", filePath: "1.mp3", coverPath: "1.jpg" },
-    { songName: "song 2", filePath: "2.mp3", coverPath: "5.jpg" },
-    { songName: "song 3", filePath: "3.mp3", coverPath: "3.jpg" },
-    { songName: "song 4", filePath: "4.mp3", coverPath: "4.jpg" },
+    { songName: "song 1", filePath: "assets/1.mp3", coverPath: "assets/1.jpg" },
+    { songName: "song 2", filePath: "assets/2.mp3", coverPath: "assets/5.jpg" },
+    { songName: "song 3", filePath: "assets/3.mp3", coverPath: "assets/3.jpg" },
+    { songName: "song 4", filePath: "assets/4.mp3", coverPath: "assets/4.jpg" },
 
-    { songName: "song 5", filePath: "5.mp3", coverPath: "5.jpg" },
-    { songName: "song 6", filePath: "6.mp3", coverPath: "6.jpg" },
-    { songName: "song 7", filePath: "7.mp3", coverPath: "7.jpg" },
-    { songName: " song 8", filePath: "8.mp3", coverPath: "8.jpg" },
+    { songName: "song 5", filePath: "assets/5.mp3", coverPath: "assets/5.jpg" },
+    { songName: "song 6", filePath: "assets/6.mp3", coverPath: "assets/6.jpg" },
+    { songName: "song 7", filePath: "assets/7.mp3", coverPath: "assets/7.jpg" },
+    { songName: " song 8", filePath: "assets/8.mp3", coverPath: "assets/8.jpg" },
 ];
 
 
@@ -104,7 +104,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
             e.target.classList.remove("fa-circle-play");
             e.target.classList.add("fa-circle-pause");
 
-            audioElement.src = `${index}.mp3`;
+            audioElement.src = `assets/${index}.mp3`;
             masterSongName.innerText = songs[index - 1].songName;
             audioElement.play();
 
@@ -120,7 +120,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
                
             // condition true if the songItem which is clicked on is the SAME 
             // songItem which is being played
-            if(parseInt(e.target.id)==`${index}`){
+            if(parseInt(e.target.id)==`assets/${index}`){
                 audioElement.pause();
                 gif.style.opacity = 0;
                 gif2.style.opacity = 0;
@@ -143,7 +143,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
                 e.target.classList.remove("fa-circle-play");
                 e.target.classList.add("fa-circle-pause");
 
-                audioElement.src = `${index}.mp3`;
+                audioElement.src = `assets/${index}.mp3`;
                 masterSongName.innerText = songs[index - 1].songName;
                 audioElement.play();
 
@@ -179,7 +179,7 @@ document.getElementById("next").addEventListener('click', () => {
     else {
         index += 1;
     }
-    audioElement.src = `${index}.mp3`;
+    audioElement.src = `assets/${index}.mp3`;
     masterSongName.innerText = songs[index - 1].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -203,7 +203,7 @@ document.getElementById("previous").addEventListener('click', () => {
     else {
         index -= 1;
     }
-    audioElement.src = `${index}.mp3`;
+    audioElement.src = `assets/${index}.mp3`;
     masterSongName.innerText = songs[index - 1].songName;
     audioElement.currentTime = 0;
     audioElement.play();
