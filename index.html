@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bhai ka Music | Music Player</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Bhai ka Music</li>
+            <li class="navbar">HOME</li>
+            <li class="navbar">ABOUT</li>
+            <li class="navbar">CONTACT</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="classList"></div>
+        <div class="songList">
+            <h1>Music tera bhai bajaega</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="1.jpg" >
+                    <span class="songName">song 1</span>
+                    <span class="songListPlay"><span class="timeStamp">05:00</span><i id="1" class="fa-regular songItemPlay fa-2x fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img src="1.jpg" alt="1">
+                    <span class="songName">song 2</span>
+                    <span class="songListPlay"><span class="timeStamp">05:00</span><i id="2"  class="fa-regular songItemPlay fa-2x fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img src="1.jpg" alt="1">
+                    <span class="songName">song 3</span>
+                    <span class="songListPlay"><span class="timeStamp">05:00</span><i id="3" class="fa-regular songItemPlay fa-2x fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img src="1.jpg" alt="1">
+                    <span class="songName">song 4</span>
+                    <span class="songListPlay"><span class="timeStamp">05:00</span><i id="4" class="fa-regular songItemPlay fa-2x fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img src="5.jpg" alt="1">
+                    <span class="songName">song 5</span>
+                    <span class="songListPlay"><span class="timeStamp">05:00</span><i id="5" class="fa-regular songItemPlay fa-2x fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img src="6.jpg" alt="1">
+                    <span class="songName">song 6</span>
+                    <span class="songListPlay"><span class="timeStamp">05:00</span><i id="6" class="fa-regular songItemPlay fa-2x fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img src="7.jpg" alt="1">
+                    <span class="songName">song 7</span>
+                    <span class="songListPlay"><span class="timeStamp">05:00</span><i id="7" class="fa-regular songItemPlay fa-2x fa-circle-play"></i> </span>
+                </div>
+                <div class="songItem">
+                    <img src="8.jpg" alt="1">
+                    <span class="songName">song 8</span>
+                    <span class="songListPlay"><span class="timeStamp">05:00</span><i id="8" class="fa-regular songItemPlay fa-2x fa-circle-play"></i> </span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" value='0' min="0" max="100">
+        <div class="icons">
+        <!-- font awesome icons-->
+        <i class="fa-solid fa-3x fa-backward" id="previous"></i>
+        <i class="fa-regular fa-3x fa-circle-play" id="masterPlay"></i>
+        <i class="fa-solid fa-3x fa-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <span id="masterSongName">song 1</span>
+        </div>
+
+    </div>
+    <div class="gif" id="gif">
+        <img src="audio.gif" width="180px" height="600px" alt="">
+        
+    </div>
+    <div class="gif2" id="gif2">
+        <img src="audio2.gif" width="180px" height="600px" alt="">
+    </div>
+    
+    <script src="https://kit.fontawesome.com/70dd6bd0dd.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

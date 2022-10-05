@@ -1,0 +1,3 @@
+change of all symbols in items in container when clicked on master play
+auto play feature
+show time of song feature
